@@ -43,3 +43,9 @@ st.write(f"Estadísticas descriptivas para la clase: {selected_class}")
 st.write(filtered_df.describe().T)
 
 
+# Crear un pairplot con Seaborn
+pairplot = sns.pairplot(iris_df, hue="class")
+
+# Mostrar el pairplot en Streamlit
+st.write("Pairplot de los pares de variables")
+st.pyplot(pairplot)
