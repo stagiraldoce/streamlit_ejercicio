@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 
-# Cargar datos del Titanic
+# Url de Iris
 url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
 
 
@@ -20,7 +20,7 @@ column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'c
 iris_df = pd.read_csv(url, names=column_names)
 
 st.title('Descripción del Dataset Iris')
-st.write('Datos del Titanic:')
+st.write('Iris Dataset:')
 st.write(iris_df.head())
 
 
